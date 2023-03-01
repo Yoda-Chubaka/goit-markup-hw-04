@@ -257,6 +257,22 @@ header .container {
     margin-right: 30px;
 }
 
+.benefit-container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-color);
+    border-radius: 4px;
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    fill: var(--primary-color);
+    padding: auto;
+    margin: auto;
+}
+
 .our-work {
     padding-bottom: 94px;
 }
