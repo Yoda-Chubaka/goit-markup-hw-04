@@ -477,11 +477,11 @@ header .container {
 }
 
 .footer-left-part {
-    
+    display: flex;
 }
 
 .footer-right-part {
-    
+    display:flex;
 }
 
 /* END footer */
