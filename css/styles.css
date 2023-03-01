@@ -346,28 +346,38 @@ header .container {
 }
 
 .box-media {
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 30px;
-    margin-top: 16px;
-    justify-content: space-around;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+    padding-top: 16px;
+    justify-content: space-between;
 }
 
 .social-list {
     margin-right: 10px;
-}
-
-.link-networks {
     width: 44px;
     height: 44px;
     fill: var(--social-network-color);
     border-radius: 50%;
+    justify-content: center;
+}
+
+.social-list:hover, 
+.social-list:focus {
+    fill: var(--primary-background-color);
+    background-color: var(--link-color);
 }
 
 .social-networks {
     display: flex;
     width: 20px;
     height: 20px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-clients {
