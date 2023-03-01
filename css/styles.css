@@ -144,12 +144,14 @@ header .container {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: var(--link-address-color);
 }
 
 .phone-icon {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    fill: var(--link-address-color);
 }
 
 .mail-icon:hover,
