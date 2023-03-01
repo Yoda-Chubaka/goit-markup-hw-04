@@ -11,6 +11,7 @@
 --border-color: #EEEEEE;
 --header-border-color: #ECECEC;
 --background-color-image: #C4C4C4;
+--social-network-color: #AFB1B8;
 }
 
 body {
@@ -346,11 +347,27 @@ header .container {
 
 .box-media {
     margin-left: 32px;
+    margin-right: 32px;
     margin-bottom: 30px;
+    margin-top: 16px;
+    justify-content: space-around;
 }
 
 .social-list {
     margin-right: 10px;
+}
+
+.link-networks {
+    width: 44px;
+    height: 44px;
+    fill: var(--social-network-color);
+    border-radius: 50%;
+}
+
+.social-networks {
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 .box-clients {
