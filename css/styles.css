@@ -399,6 +399,7 @@ header .container {
 
 .box-clients {
     justify-content: space-between;
+    align-items: center;
 }
 
 .clients-title {
@@ -411,6 +412,26 @@ header .container {
     color: var(--primary-color);
 }
 
+.client-icon {
+    width: 106px;
+    height: 60px;
+}
+
+.clients-company {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-network-color);
+    border-radius: 4px;
+}
+
+.link-company {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
 /* END index.html */
 
 /* START portfolio.html */
@@ -523,7 +544,6 @@ header .container {
 }
 
 .join-link {
-    /* margin-top: 72px; */
     margin-bottom: 20px;
     color: var(--primary-background-color);
     font-weight: 700;
@@ -535,7 +555,7 @@ header .container {
 
 .footer-container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .footer-right-part {
