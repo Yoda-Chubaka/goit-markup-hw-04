@@ -409,6 +409,7 @@ header .container {
 .client-icon {
     width: 106px;
     height: 60px;
+    fill: var(--social-network-color);
 }
 
 .clients-company {
@@ -417,6 +418,12 @@ header .container {
     border: 1px solid var(--social-network-color);
     border-radius: 4px;
 }
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--link-color);
+}
+
 
 .link-company {
     display: flex;
@@ -455,6 +462,7 @@ header .container {
     color: var(--primary-background-color);
     background-color: var(--link-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-items {
@@ -467,6 +475,11 @@ header .container {
     flex-basis: calc((100% - 3 * 30) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.card-project:hover,
+.card-project:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-project:not(:last-child) {
