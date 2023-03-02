@@ -296,6 +296,7 @@ header .container {
 
 .worker-list {
     flex-basis: ((100% - 4*30) / 4);
+    width: 270px;
 }
 
 .worker-list:not(:last-child) {
@@ -305,9 +306,7 @@ header .container {
 .worker-description {
     padding-top: 30px;
     padding-bottom: 30px;
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-background-color);
 }
@@ -370,12 +369,6 @@ header .container {
     align-items: center;
 }
 
-.social-list:hover, 
-.social-list:focus {
-    fill: var(--primary-background-color);
-    background-color: var(--link-color);
-}
-
 .link-networks {
     width: 44px;
     height: 44px;
@@ -389,6 +382,7 @@ header .container {
 .link-networks:hover,
 .link-networks:focus {
     fill: var(--primary-background-color);
+    background-color: var(--link-color);
 }
 
 .social-networks {
@@ -432,6 +426,7 @@ header .container {
     margin-right: 32px;
     margin-left: 32px;
 }
+
 /* END index.html */
 
 /* START portfolio.html */
@@ -573,12 +568,6 @@ header .container {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list-footer:hover,
-.social-list-footer:focus {
-    fill: var(--primary-background-color);
-    background-color: var(--link-color);
-}
-
 .link-networks-footer {
     width: 44px;
     height: 44px;
@@ -587,6 +576,12 @@ header .container {
     display: flex;
     align-items: center;
     fill: #757575;
+}
+
+.link-networks-footer:hover,
+.link-networks-footer:focus {
+    fill: var(--primary-background-color);
+    background-color: var(--link-color);
 }
 
 .social-networks-footer {
