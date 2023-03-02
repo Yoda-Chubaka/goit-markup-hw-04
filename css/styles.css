@@ -427,7 +427,8 @@ header .container {
 
 .link-company {
     display: flex;
-    align-items: center;
+    width: 170px;
+    height: 92px;
     margin-top: 16px;
     margin-bottom: 16px;
     margin-right: 32px;
