@@ -224,7 +224,14 @@ header .container {
 }
 
 .hidden-title {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 .advantages {
@@ -357,7 +364,6 @@ header .container {
     margin-right: 10px;
     width: 44px;
     height: 44px;
-    fill: var(--social-network-color);
     border-radius: 50%;
     justify-content: center;
     display: flex;
@@ -368,6 +374,21 @@ header .container {
 .social-list:focus {
     fill: var(--primary-background-color);
     background-color: var(--link-color);
+}
+
+.link-networks {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    fill: var(--social-network-color);
+}
+
+.link-networks:hover,
+.link-networks:focus {
+    fill: var(--primary-background-color);
 }
 
 .social-networks {
@@ -493,11 +514,6 @@ header .container {
     color: var(--color-transparant);
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--link-color);
-}
-
 .footer-list {
     margin-top: 20px;
 }
@@ -520,22 +536,25 @@ header .container {
     align-items: center;
 }
 
-/* .footer-left-part {
-    display: flex;
-} */
-
 .footer-right-part {
     margin-left: 70px;
+}
+
+.box-media-footer {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    justify-content: space-between;
 }
 
 .social-list-footer {
     width: 44px;
     height: 44px;
-    fill: var(--social-network-color);
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list-footer:hover,
@@ -544,10 +563,21 @@ header .container {
     background-color: var(--link-color);
 }
 
+.link-networks-footer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    fill: #757575;
+}
+
 .social-networks-footer {
     display: flex;
     width: 20px;
     height: 20px;
+    fill: var(--primary-background-color);
 }
 
 /* END footer */
