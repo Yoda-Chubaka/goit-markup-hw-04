@@ -523,6 +523,8 @@ header .container {
 }
 
 .join-link {
+    /* margin-top: 72px; */
+    margin-bottom: 20px;
     color: var(--primary-background-color);
     font-weight: 700;
     font-size: 14px;
@@ -538,12 +540,6 @@ header .container {
 
 .footer-right-part {
     margin-left: 70px;
-}
-
-.box-media-footer {
-    margin-bottom: 10px;
-    margin-top: 50px;
-    justify-content: space-between;
 }
 
 .social-list-footer {
