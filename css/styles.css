@@ -102,7 +102,6 @@ header .container {
     letter-spacing: 0.02em;
 }
 
-
 .list-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -136,6 +135,8 @@ header .container {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+
 
 .address-item:not(:last-child) {
     margin-right: 50px;
@@ -186,6 +187,8 @@ header .container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .hero-title {
@@ -272,14 +275,13 @@ header .container {
     height: 120px;
     background-color: var(--section-color);
     border-radius: 4px;
+    justify-content: center;
+        align-items: center;
 }
 
 .benefit-icon {
     width: 70px;
     height: 70px;
-    fill: var(--primary-color);
-    padding: auto;
-    margin: auto;
 }
 
 .our-work {
@@ -343,30 +345,30 @@ header .container {
 }
 
 .profession-worker {
-    color: var(--link-address-color);
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--link-address-color);
 }
 
 .box-media {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-    padding-top: 16px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social-list {
-    margin-right: 10px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.social-list:not(:last-child) {
+    margin-right: 10px;
 }
 
 .link-networks {
@@ -397,7 +399,7 @@ header .container {
 }
 
 .clients-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
