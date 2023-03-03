@@ -134,6 +134,8 @@ header .container {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -187,8 +189,8 @@ header .container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -423,9 +425,9 @@ header .container {
     margin-right: 30px;
 }
 
-.client-icon:hover,
-.client-icon:focus {
-    fill: var(--link-color);
+.link-company:hover,
+.link-company:focus {
+    border: 1px solid var(--link-color);
 }
 
 .link-company {
@@ -438,9 +440,9 @@ header .container {
     border-radius: 4px;
 }
 
-.link-company:hover,
-.link-company:focus {
-    border: 1px solid var(--link-color);
+.link-company:hover .client-icon,
+.link-company:focus .client-icon {
+    fill: var(--link-color);
 }
 
 /* END index.html */
@@ -590,8 +592,11 @@ header .container {
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-footer:not(:last-child) {
+    margin-right: 10px;
 }
 
 .link-networks-footer {
@@ -601,7 +606,7 @@ header .container {
     justify-content: center;
     display: flex;
     align-items: center;
-    fill: #757575;
+    fill: var(--link-address-color);
 }
 
 .link-networks-footer:hover,
